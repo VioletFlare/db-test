@@ -7,7 +7,8 @@ class BaseDemo extends Phaser.Scene {
     }
     
     preload() {
-        this.plugins.installScenePlugin('dragonBones', dragonBones.phaser.plugin.DragonBonesScenePlugin, 'dragonbone', this);
+        //from within the base demo i install the DB plugin
+        this.plugins.installScenePlugin('dragonBones', dragonBones.phaser.plugin.DragonBonesScenePlugin, 'dragonbone', this); 
         this.load.image(this.BACKGROUND_URL, this.BACKGROUND_URL);
     }
 
